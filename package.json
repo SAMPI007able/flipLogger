@@ -1,0 +1,26 @@
+{
+  "name": "fliplogger",
+  "version": "1.0.0",
+  "description": "logger assessment service",
+  "main": "output/index.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "parcel build",
+    "start": "npm run build && node output/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "npm run build && jest --detectOpenHandles"
+  },
+  "author": "Arnab",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "jest": "^29.7.0",
+    "parcel": "^2.12.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@types/async-lock": "^1.4.2",
+    "async-lock": "^1.4.1"
+  }
+}
